@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+  {% block body %}
+    <p></p>
+    <form action="/" method='post'>
+        <div>
+        <label for="rot_box">Rotate by:</label>
+            <input id="rot_box" type="text" value="0" name="rotation-amount">
+          </div>  
+            <br>
+          <div>
+            <textarea name="block_text">{{new_text_box}}</textarea>
+            <button type="submit">Submit me please!</button>
+          </div>  
+        
+    </form>
+
+  {% endblock %}
